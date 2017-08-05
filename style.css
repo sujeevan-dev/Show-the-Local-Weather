@@ -6,19 +6,28 @@ body {
 	border: 2px solid blue;
 	width: 70%;
 	margin: 0 auto;
+	background-color: #c1c8e4;
 }
 
 header {
 	width: 100%;
 	height: auto;
-	border-bottom: 2px solid blue;
+	border-bottom: 5px solid blue;
 	overflow: hidden;
 }
 
 #logo {
 	float: left;
-	color: darkblue;
+	color: #5680e9;
 	padding: 1.5em;
+	font-weight: 500;
+	font-family: Helvetica, sans-serif;
+	font-size: 1.3em;
+}
+
+#logo h1{
+	text-shadow: 0.2em 0.2em 0 #f1f1f1;
+
 }
 
 header nav {
@@ -33,13 +42,22 @@ ul li {
 	display: inline-block;
 	text-decoration: none;
 	padding: 0.3em;
+	border-radius: 5px;
 }
 
 a {
 	text-decoration: none;
 	padding: 10px;
-	background-color: pink;
 	border-radius: 5px;
+	color: #fff;
+}
+
+#cel {
+	background-color: #8860d0;
+}
+
+#fah {
+	background-color: #5680e9;
 }
 
 section {
@@ -49,13 +67,17 @@ section {
 #display {
 	margin: 0 auto;
 	text-align: center;
+	color: #000;
 }
 
-h1 {
+section h1 {
 	text-align: center;
-	color: orange;
+	color: #f1f1f1;
 }
 
 footer {
+	font-size: 0.8em;
 	text-align: center;
+	margin: 10px;
+	color: #fff;
 }
