@@ -25,31 +25,60 @@ function weather() {
 	}
 
 	location.innerHTML = "Locating...";
+}
 
-	//icons
-	var symbol= '';
-	document.getElementById('#icon').innerHTML = symbol;
-	switch (symbol) {
-    case clear-day: <i class="wi wi-night-sleet"></i>;
+
+
+/*//icons
+	function showIcons () {
+	var icon = document.getElementById('#icon');
+	var data = document.getElementById('#icon').html(data.currently.icon);
+
+
+	switch (icon) {
+
+	case clear-day:
+        data = "<i class="wi wi-day-sunny"></i>";
         break;
-    case 1:
-        day = "Monday";
+    case clear-night:
+        data = "<i class="wi wi-night-clear"></i>";
         break;
-    case 2:
-        day = "Tuesday";
+    case snow:
+        symbol.html = "<i class="wi wi-snow"></i>";
         break;
-    case 3:
-        day = "Wednesday";
+    case sleet:
+        symbol.html = "<i class="wi wi-day-sleet"></i>";
         break;
-    case 4:
-        day = "Thursday";
+    case wind:
+        symbol.html = "<i class="wi wi-windy"></i>";
         break;
-    case 5:
-        day = "Friday";
+    case hail:
+        symbol.html = "<i class="wi wi-hail"></i>";
         break;
-    case 6:
-        day = "Saturday";
+    case fog:
+        symbol.html = "<i class="wi wi-fog"></i>";
+        break;
+    case cloudy:
+        symbol.html = "<i class="wi wi-cloud"></i>";
+        break;
+    case partly-cloudy-day:
+        symbol.html = "<i class="wi wi-day-cloudy-high"></i>";
+        break;
+    case partly-cloudy-night:
+        symbol.html = "<i class="wi wi-night-alt-cloudy"></i>";
+        break;
+    case thunderstorm:
+        symbol.html = "<i class="wi wi-thunderstorm"></i>";
+        break;
+    case tornado:
+        symbol.html = "<i class="wi wi-tornado"></i>";
+        break;
+	}
 }
-}
+
+*/
+
+
+
 
 weather();
