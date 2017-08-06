@@ -16,6 +16,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
+
 <body>
 	<div id="container">
 	<header>
@@ -24,13 +25,13 @@
 		</div>
 		<nav>
 			<ul>
-				<li id="cel"><a href="#">&#8451;</a></li>
-				<li id="fah"><a href="#">&#8457;</a></li>	
 			</ul>	
 		</nav>
 	</header>
 
 	<section>
+		<button id="cel" onclick="convert()">&#8451;</button>
+		<button id="fah" onclick="convert()">&#8457;</button>	
 		<h1>Currant Weather</h1>
 		<div id="display">
 			<h2><div id="zone"></div></h2>

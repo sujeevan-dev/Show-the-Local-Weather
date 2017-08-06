@@ -25,11 +25,42 @@ function weather() {
 	}
 
 	location.innerHTML = "Locating...";
+
+    }
+
+//Button functions
+$('#fah').prop('disabled', true);
+$('#cel').prop('disabled', false);
+
+var fah = document.getElementById("fah");
+var cel = document.getElementById("cel");
+var temp = document.getElementById("temp");
+
+function convert() {
+
+if(cel.disabled == true) {
+    fah.value -32 * 5 / 9;
+    cel.value = Math.round(temp.value);
+} else if(fah.disabled == false) {
+    cel.value * 9 / 5 + 32;
+    fah.value = Math.round(temp.value);
+    }
+
 }
 
+/*//Celcius and Ferheneit converter
+function convert(degree) {
 
-
-/*//icons
+    if (degree == "F") {
+        x = (document.getElementById("f").value -32) * 5 / 9;
+        document.getElementById("c").value = Math.round(x);
+        
+    } else {
+        x = document.getElementById("c").value * 9 / 5 + 32;
+        document.getElementById("f").value = Math.round(x);
+    }
+}
+/icons
 	function showIcons () {
 	var icon = document.getElementById('#icon');
 	var data = document.getElementById('#icon').html(data.currently.icon);

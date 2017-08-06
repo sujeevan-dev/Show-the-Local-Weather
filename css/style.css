@@ -17,12 +17,13 @@ header {
 }
 
 #logo {
-	float: left;
 	color: #5680e9;
-	padding: 1.5em;
+	padding: 1em;
 	font-weight: 500;
 	font-family: Helvetica, sans-serif;
-	font-size: 1.3em;
+	margin: 0 auto;
+	font-size: 1.5em;
+	text-align: center;
 }
 
 #logo h1{
@@ -30,37 +31,24 @@ header {
 
 }
 
-header nav {
+#fah {
+	background-color: #5680e9;
 	float: right;
-}
-
-header nav ul {
-	list-style: none;
-}
-
-ul li {
-	display: inline-block;
-	text-decoration: none;
-	padding: 0.5em;
-	border-radius: 5px;
-}
-
-a {
-	text-decoration: none;
-	padding: 10px;
-	border-radius: 5px;
-	color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
 }
 
 #cel {
 	background-color: #8860d0;
+	float: right;
+	margin: 0px 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
 }
 
-#fah {
-	background-color: #5680e9;
-	margin-right: 20px;
-    margin-left: 5px;
-}
+
 
 section {
 	clear: both;
@@ -78,6 +66,7 @@ section {
 
 section h1 {
 	text-align: center;
+	margin-left: 3em;
 	color: #009688;
 	font-size: 2em;
 	font-family: 'Roboto Slab', serif;
