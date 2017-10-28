@@ -10,7 +10,6 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 </head>
-
 <body>
 	<div id="container">
 	<header>
@@ -20,14 +19,13 @@
 	</header>
 
 	<section>
-		<button id="cel" onclick="fToC()">&#8451;</button>
+		<button id="cel">&#8451;</button>
 		<button id="fah">&#8457;</button>
 
 		<h1>Currant Weather</h1>
 		<div id="display">
 			<h2><div id="zone"></div></h2>
-			<h3><div id="icon">
-			</div></h3>
+          	<canvas id="icon" width="100px" height="100px"></canvas>    
 			<h3><div id="temp"></div></h3>
 			<h3><div id="summary"></div></h3>
 			<h5><div id="location"></div></h5>
