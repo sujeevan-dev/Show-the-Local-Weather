@@ -39,7 +39,7 @@ function weather() {
 
 			//Skycons
 			var iconRequest = $("#icon").html();
-			var skycons = new Skycons({'color' : 'orange'});
+			var skycons = new Skycons({'color' : '#ff3f80'});
 			var i;
 
             var list  = [
