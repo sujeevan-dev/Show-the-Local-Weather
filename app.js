@@ -3,6 +3,8 @@ function weather() {
 	var location = $('#location');
 	var key = '52fb36032ca1c37e51ec197cb55369a8';
 	var url = 'https://api.darksky.net/forecast/';
+	
+	
 
 	navigator.geolocation.getCurrentPosition(success, error);
 
@@ -19,7 +21,7 @@ function weather() {
 			$('#summary').html(data.currently.summary);
 			$("#icon").html(data.currently.icon);
 
-			//Button functions
+			//Button functions																																																													
 			var f = $('#temp').html();
 			f = parseFloat(f);
 
@@ -32,10 +34,39 @@ function weather() {
 			});
 			
 			$('#fah').click(function () {
-					$('#temp').html(Math.round(data.currently.temperature) + ' °' + 'F');
-				});
+				$('#temp').html(Math.round(data.currently.temperature) + ' °' + 'F');
+			});
 
-		});
+			//Skycons
+			var iconRequest = $("#icon").html();
+			var skycons = new Skycons({'color' : 'orange'});
+			var i;
+
+            var list  = [
+                "clear-day",
+                "clear-night",
+                "partly-cloudy-day",
+                "partly-cloudy-night",
+                "cloudy",
+                "rain",
+                "sleet",
+                "snow",
+                "wind",
+                "humid",
+                "fog"
+            ];
+			
+            for (i = 0; i < list.length; i++) {
+				if (iconRequest == list[i]) {
+						skycons.set('icon', list[i]);
+					
+				}
+			}
+
+			skycons.play();
+		
+		
+		}); //End of API request
 
 
 		
